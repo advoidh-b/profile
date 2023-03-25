@@ -61,7 +61,7 @@ div.top-nav-cont > a:hover {
 }
 aside {
     grid-area: as;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     position: fixed;
@@ -77,19 +77,9 @@ aside {
     flex-flow: column wrap;
     position: relative;
 }
-.progress-bar .dots {
-    width: 1rem;
-    height: 1rem;
-    margin: 0 0 auto;
-    background: var(--subaccent);
-    position: relative;
-    left: -5.8px;
-    border-radius: 50%;
-}
+
 main {
-    grid-area: mn;
-    
-    
+    grid-area: mn;  
 }
 section.hero-sec {
     padding: 2.0rem 2.0rem 2.0rem;
@@ -360,11 +350,11 @@ footer {
 }
 @keyframes bodyColor {
     from {
-        background: linear-gradient(160deg, #fcfff8, #fcfff8, var(--bgdark)) no-repeat;
+        opacity: 0.4;
         transition: 8.0s;
     }
     to {
-        background: linear-gradient(160deg, var(--defbg), var(--defbg), var(--bgdark)) no-repeat;
+        opacity: 1.0;
         transition: 8.0s;
     }
 }
